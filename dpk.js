@@ -21,7 +21,7 @@ const getPartitionKeyFromEvent = (event) => {
 /**
  *
  * @param { Object | undefined } event
- * @param { string | undefined } event.partitionKey
+ * @param { string | Object | undefined } event.partitionKey
  * @returns { string }
  */
 const getDeterministicPartitionKey = (event) => {
