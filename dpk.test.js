@@ -1,4 +1,4 @@
-const {getDeterministicPartitionKey} = require("./dpk");
+const { getDeterministicPartitionKey } = require("./dpk");
 
 describe("getDeterministicPartitionKey", () => {
     it("Returns the literal '0' when given no input", () => {
@@ -9,7 +9,7 @@ describe("getDeterministicPartitionKey", () => {
 
     it("Returns the predefined key from event", () => {
         const partitionKey = "PREDEFINED_PARTITION_KEY";
-        const predefinedKey = getDeterministicPartitionKey({partitionKey});
+        const predefinedKey = getDeterministicPartitionKey({ partitionKey });
 
         expect(predefinedKey).toBe(partitionKey);
     });
